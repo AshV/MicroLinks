@@ -1,17 +1,32 @@
 ﻿using System;
+using FirebaseNet.Database;
 
 namespace MicroLinks.Firabase
 {
-    class Navigator : INavigator
+    public class Navigator : INavigator
     {
-        public Uri CheckDestination(string uri)
+        private static readonly Navigator instance = new Navigator();
+
+        static Navigator() { }
+
+        private Navigator() { }
+
+        public static Navigator Get
+        {
+            get
+            {
+                return instance;
+            }
+        }
+
+        public string CheckDestination(string uri)
         {
             throw new NotImplementedException();
         }
 
-        public Uri Navigate(string keyword)
+        public string Navigate(string keyword)
         {
-            throw new NotImplementedException();
+            return Database.Get.GetLinK(keyword);
         }
     }
 }

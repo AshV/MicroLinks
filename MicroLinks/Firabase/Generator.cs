@@ -2,16 +2,30 @@
 
 namespace MicroLinks.Firabase
 {
-    class Generator : IGenerator
+    public class Generator : IGenerator
     {
+        private static readonly Generator instance = new Generator();
+
+        static Generator() { }
+
+        private Generator() { }
+
+        public static Generator Get
+        {
+            get
+            {
+                return instance;
+            }
+        }
+
         public bool CheckAvailability(string keyword)
         {
-            throw new NotImplementedException();
+            return Database.Get.IsAvailable(keyword);
         }
 
         public string CreateMicroLink(string url)
         {
-            throw new NotImplementedException();
+            return Database.Get.PushLink(url);
         }
     }
 }

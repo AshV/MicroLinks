@@ -4,7 +4,7 @@ namespace MicroLinks
 {
     interface INavigator
     {
-        Uri Navigate(string keyword);
-        Uri CheckDestination(string uri);
+        string Navigate(string keyword);
+        string CheckDestination(string uri);
     }
 }
