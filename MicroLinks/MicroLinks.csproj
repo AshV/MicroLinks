@@ -1,7 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard1.4</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="FirebaseNet">
+      <HintPath>..\common\FirebaseNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 
 </Project>
