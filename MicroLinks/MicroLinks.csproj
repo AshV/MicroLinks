@@ -5,9 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="FirebaseNet">
-      <HintPath>..\common\FirebaseNet.dll</HintPath>
-    </Reference>
+    <Compile Remove="FirebaseDB.cs" />
+    <Compile Remove="FirebaseRequest.cs" />
+    <Compile Remove="FirebaseResponse.cs" />
+    <Compile Remove="UtilityHelper.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
   </ItemGroup>
 
 </Project>
