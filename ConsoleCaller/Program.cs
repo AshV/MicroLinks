@@ -13,8 +13,8 @@ namespace ConsoleCaller
             {
                 WriteLine("Link To Short");
                 var key = Console.ReadLine();
-                Generator.Get.CreateMicroLink(key);
-                WriteLine(Navigator.Get.Navigate(key));
+                WriteLine(Generator.Get.CreateMicroLink(key));
+                WriteLine(Navigator.Get.Navigate("dkxmm"));
                 ReadLine();
             }
         }
