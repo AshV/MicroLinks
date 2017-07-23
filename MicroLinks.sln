@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroLinks", "MicroLinks\Mi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleCaller", "ConsoleCaller\ConsoleCaller.csproj", "{31B570C6-1948-41EC-B5D9-4A39B0A402D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroLinksWebAPI", "MicroLinksWebAPI\MicroLinksWebAPI.csproj", "{BF129122-DF37-45AE-AB6F-487E8EF20419}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroLinksAPI", "MicroLinksAPI\MicroLinksAPI.csproj", "{AE1481E0-41BB-4C77-8669-568CDE2E0439}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{31B570C6-1948-41EC-B5D9-4A39B0A402D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31B570C6-1948-41EC-B5D9-4A39B0A402D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31B570C6-1948-41EC-B5D9-4A39B0A402D4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BF129122-DF37-45AE-AB6F-487E8EF20419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BF129122-DF37-45AE-AB6F-487E8EF20419}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BF129122-DF37-45AE-AB6F-487E8EF20419}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BF129122-DF37-45AE-AB6F-487E8EF20419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE1481E0-41BB-4C77-8669-568CDE2E0439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE1481E0-41BB-4C77-8669-568CDE2E0439}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE1481E0-41BB-4C77-8669-568CDE2E0439}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE1481E0-41BB-4C77-8669-568CDE2E0439}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -9,6 +9,7 @@ namespace ConsoleCaller
     {
         static void Main(string[] args)
         {
+            new Uri("https://github.com/AshV", UriKind.RelativeOrAbsolute);
             while (true)
             {
                 WriteLine("Link To Short");
