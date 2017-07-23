@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using MicroLinks.Firabase;
 
 namespace MicroLinksAPI.Controllers
 {
@@ -20,8 +21,9 @@ namespace MicroLinksAPI.Controllers
         // GET: api/Links/5
         public HttpResponseMessage Get(string id)
         {
+            var link = Generator.Get.CreateMicroLink(id);
             HttpResponseMessage response = new HttpResponseMessage(HttpStatusCode.Moved);
-            response.Headers.Location = new Uri("http://ashv.ml", UriKind.RelativeOrAbsolute);
+            response.Headers.Location = new Uri(link, UriKind.RelativeOrAbsolute);
             return (response);
         }
 
